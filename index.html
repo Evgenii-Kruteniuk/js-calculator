@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <button class="js-hidden">Скрыть всё</button>
+    </div>
+    <div class="main">
+      <div class="h"><p class="p">Калькулятор</p></div>
+      <div class="calc">
+        <input class="js-input-a" type="number" />
+        <select class="js-select-operation">
+          <option value=""></option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input class="js-input-b" type="number" />
+        <div class="btn">
+          <button class="js-btn-result decor">Результат</button>
+          <button class="js-btn-ac decor">AC</button>
+        </div>
+      </div>
+      <div class="js-output">Ваш результат будет:<span></span></div>
+    </div>
+    <script src="calculator.js"></script>
+    <script src="math.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

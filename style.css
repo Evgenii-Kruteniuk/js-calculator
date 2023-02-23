@@ -1,0 +1,127 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: url("/img/calculator.jpg") 50% / cover no-repeat;
+  color: white;
+}
+.header {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.header button {
+  margin-right: 5px;
+}
+
+.h {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+.main {
+  margin: 0 auto;
+  height: 60vh;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.js-input-a {
+  height: 40px;
+  width: 200px;
+  font-size: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px #fff;
+}
+.js-input-b {
+  height: 40px;
+  width: 200px;
+  font-size: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 5px #fff;
+}
+.js-select-operation {
+  border: 5px double rgb(151, 30, 30);
+  width: 50px;
+  font-size: 32px;
+}
+
+.js-output {
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(56, 56, 56, 0.6);
+  border-radius: 20px;
+}
+
+.decor {
+  box-shadow: 0px 5px 1px #959494;
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 40px;
+  width: 110px;
+  margin: 10px;
+  font-weight: 700;
+  background-color: rgb(245, 132, 132);
+}
+.decor:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0.5);
+}
+
+.js-hidden {
+  box-shadow: 0px 5px 1px #709d73;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 100px;
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    rgb(232, 244, 6),
+    rgb(2, 130, 250),
+    rgb(116, 244, 4),
+    rgb(251, 151, 0)
+  );
+  height: 40px;
+  width: 100px;
+}
+.js-hidden:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0.5);
+}
+
+.calc {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+
+.active {
+  visibility: hidden;
+}
+
+.js-output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 10vh;
+}
